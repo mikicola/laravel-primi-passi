@@ -11,9 +11,9 @@
         <nav>
             <ul>
                 <li><a href="/">home</a></li>
-                <li><a href="/about-us">about us</a></li>
-                <li><a href="/contacts">contacts</a></li>
-                <li><a href="/products">products</a></li>
+                <li><a href="{{ route ('about-us')}}">about us</a></li>
+                <li><a href="{{ route ('contacts')}}">contacts</a></li>
+                <li><a href="{{ route ('products')}}">products</a></li>
             </ul>
         </nav>
     </header>
@@ -21,6 +21,9 @@
     {{-- <h1>Hello <?= $name; ?></h1> --}}
 
     <style>
+        html{
+            font-family: Arial, Helvetica, sans-serif
+        }
         ul{
             padding: 0px;
             font-size: 1.5rem;
